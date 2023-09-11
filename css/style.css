@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Fraunces', serif; 
+}
+
+
+li{
+    list-style-type: none;
+}
+
+section{
+    /* padding: 40px 30px; */
+    width: 100%;
+}
+/* ************************************Section Presentation */
+#presentation{
+    background: url(../images/mobile/image-header.jpg);
+    height: 500px;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid fuchsia;
+    color: hsl(0, 0%, 100%);
+    padding: 40px 30px;
+}
+
+.linkContainer img{
+    margin-top: 3px;
+}
+
+.linkContainer ul{
+    display: none;
+}
+
+.linkNav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    margin: 15% auto;
+    text-align: center;
+    letter-spacing: .7rem;
+    font-size: 1.2em;
+}
+
+.title img{
+    margin-top: 27%;
+}
+/* ****************************************************************Section  */
+.prestation img{
+    width: 100%;
+}
