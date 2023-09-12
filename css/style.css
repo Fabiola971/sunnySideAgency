@@ -10,14 +10,44 @@ h1{
     font-family: 'Fraunces', serif; 
 }
 
+h2{
+    font-family: 'Fraunces', serif;
+}
+
+h2:first-of-type{
+    margin-left: 45px;
+    margin-right: 30px;
+}
+
+h2:nth-of-type(2){
+    margin-left: 45px;
+    margin-right: 45px;
+}
 
 li{
     list-style-type: none;
 }
 
+p{
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
 section{
     /* padding: 40px 30px; */
     width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+.colorDarkGrayishBlue{
+   color: hsl(232, 10%, 55%);
 }
 /* ************************************Section Presentation */
 #presentation{
@@ -55,6 +85,60 @@ section{
     margin-top: 27%;
 }
 /* ****************************************************************Section  */
+.description{
+    padding: 20px;
+    
+}
+
+.description p{
+    padding: 20px 0;
+    line-height: 32px;
+}
+
 .prestation img{
     width: 100%;
 }
+
+.margTop{
+    margin-top: -241px;
+}
+/* *************************************************************Section Gallery */
+
+.photos img{
+   width: 50%; 
+}
+/* *************************************************************Footer */
+.footer{
+    color: hsl(168, 34%, 41%);
+    background-color: rgb(159, 211, 197);
+    padding: 60px 40px;
+    font-family: 'Barlow', sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkFooter li{
+    padding-inline: 30px;
+}
+
+.linkFooter ul{
+    margin: 30px 0 60px;
+}
+
+.linkSocialNetWork img{
+    margin-inline: 20px;
+}
+
+
+
+.colours{
+    color: hsl(212, 27%, 19%);
+    color: hsl(213, 9%, 39%);
+    color: hsl(212, 27%, 19%);
+    color: hsl(213, 9%, 39%);
+    color: hsl(232, 10%, 55%);
+    color: hsl(210, 4%, 67%);
+    color: hsl(0, 0%, 100%);
+}
+
+
