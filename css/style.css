@@ -10,7 +10,7 @@ h1{
     font-family: 'Fraunces', serif; 
 }
 
-h2{
+h2, h3{
     font-family: 'Fraunces', serif;
 }
 
@@ -28,7 +28,7 @@ li{
     list-style-type: none;
 }
 
-p{
+p, span{
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
 }
@@ -58,20 +58,32 @@ section{
     background-repeat: no-repeat;
     border: 2px solid fuchsia;
     color: hsl(0, 0%, 100%);
-    padding: 40px 30px;
+    padding: 40px;
 }
+
 
 .linkContainer img{
     margin-top: 3px;
 }
 
-.linkContainer ul{
+.hidden{
     display: none;
 }
 
 .linkNav{
     display: flex;
     justify-content: space-between;
+}
+
+.navBarMobile{
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    right: 40px;
+    height: 18.3%;
+    color: hsl(210, 4%, 67%);
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Barlow', sans-serif;;
 }
 
 .title{
@@ -84,7 +96,7 @@ section{
 .title img{
     margin-top: 27%;
 }
-/* ****************************************************************Section  */
+/* ****************************************************************Section  Prestation*/
 .description{
     padding: 20px;
     
@@ -101,6 +113,51 @@ section{
 
 .margTop{
     margin-top: -241px;
+}
+/* **************************************************************Section Testimony */
+.testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimony h3{
+    font-weight: 900;
+    margin: 40px 0 10px;
+}
+
+.testimony img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 80px 0px 40px;
+}
+
+.testimonys{
+    margin-top: 30px;
+    padding: 50px 40px 80px;
+    border: 2px solid red;
+}
+
+.testimonys h3:first-child{
+    text-align: center;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: .1rem;
+    margin: 50px 0 10px;
+}
+
+.testimonys p{
+    color: hsl(213, 9%, 39%);
+    line-height: 32px;
+    padding-inline: 5px;
+
+}
+
+.testimonys span{
+    color: hsl(210, 4%, 67%);
 }
 /* *************************************************************Section Gallery */
 
