@@ -21,7 +21,7 @@ h2:first-of-type{
 
 h2:nth-of-type(2){
     margin-left: 45px;
-    margin-right: 45px;
+    margin-right: 45px;https://file+.vscode-resource.vscode-cdn.net/Users/user/Documents/2023/juillet/sunnyside-agency-landing-page-main/design/mobile-design.jpg?version%3D1694693744263
 }
 
 li{
@@ -75,16 +75,54 @@ section{
     justify-content: space-between;
 }
 
+.navBarMobile::before{
+    content: " ";
+    width: 0px;
+    height: 0px;
+    border: 0.1px solid transparent;
+    position: absolute;
+    border-width: 30px;
+    border-color: transparent white transparent transparent;
+    margin-left: 79.80%;
+    margin-top: -20px;
+    display: block;    
+}
+
 .navBarMobile{
     position: absolute;
     top: 120px;
     left: 40px;
     right: 40px;
-    height: 18.3%;
+    padding-bottom: 40px;
+    /* height: 18.3%; */
     color: hsl(210, 4%, 67%);
     background-color: hsl(0, 0%, 100%);
     font-family: 'Barlow', sans-serif;;
 }
+
+.navBarMobile ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navBarMobile ul li{
+    margin-top: 30px;
+}
+
+.navBarMobile ul li:last-of-type{
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 25px;
+    color: #000;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
 
 .title{
     margin: 15% auto;
@@ -97,8 +135,20 @@ section{
     margin-top: 27%;
 }
 /* ****************************************************************Section  Prestation*/
+hr{
+    width: 140px;
+    height: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: -10px;
+    border: none;
+}
+
 .description{
-    padding: 20px;
+    padding: 40px 20px;
     
 }
 
@@ -112,9 +162,25 @@ section{
 }
 
 .margTop{
-    margin-top: -241px;
+    margin-top: -282px;
 }
+
+.readMore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.readMore h3{
+    z-index: 1;
+}
+
 /* **************************************************************Section Testimony */
+.adapt{
+    margin-left: -8px;
+    color: hsl(213, 9%, 39%);
+}
+
 .testimony{
     display: flex;
     flex-direction: column;
@@ -138,7 +204,7 @@ section{
 
 .testimonys{
     margin-top: 30px;
-    padding: 50px 40px 80px;
+    padding: 50px 28px 80px;
     border: 2px solid red;
 }
 
@@ -152,11 +218,11 @@ section{
 .testimonys p{
     color: hsl(213, 9%, 39%);
     line-height: 32px;
-    padding-inline: 5px;
+    /* padding-inline: 5px; */
 
 }
 
-.testimonys span{
+span{
     color: hsl(210, 4%, 67%);
 }
 /* *************************************************************Section Gallery */
