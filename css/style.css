@@ -21,11 +21,15 @@ h2:first-of-type{
 
 h2:nth-of-type(2){
     margin-left: 45px;
-    margin-right: 45px;https://file+.vscode-resource.vscode-cdn.net/Users/user/Documents/2023/juillet/sunnyside-agency-landing-page-main/design/mobile-design.jpg?version%3D1694693744263
+    margin-right: 45px;
 }
 
 li{
     list-style-type: none;
+}
+
+li:hover{
+    color: hsl(0, 0%, 100%);
 }
 
 p, span{
@@ -52,7 +56,7 @@ section{
 /* ************************************Section Presentation */
 #presentation{
     background: url(../images/mobile/image-header.jpg);
-    height: 500px;
+    height: 100%;
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -123,7 +127,6 @@ section{
     -o-border-radius: 25px;
 }
 
-
 .title{
     margin: 15% auto;
     text-align: center;
@@ -147,22 +150,23 @@ hr{
     border: none;
 }
 
+.containerPhotoGraphy .description{
+    margin-top: -282px;
+}
+
 .description{
-    padding: 40px 20px;
-    
+    padding: 40px 10px;    
 }
 
 .description p{
-    padding: 20px 0;
+    padding: 20px 0px;
     line-height: 32px;
+    font-size: 17px;
+    color: hsl(232, 10%, 55%);
 }
 
 .prestation img{
     width: 100%;
-}
-
-.margTop{
-    margin-top: -282px;
 }
 
 .readMore{
@@ -174,6 +178,12 @@ hr{
 .readMore h3{
     z-index: 1;
 }
+
+.containGraphic p{
+    color: rgb(65, 104, 93);
+}
+
+
 
 /* **************************************************************Section Testimony */
 .adapt{
@@ -252,16 +262,142 @@ span{
     margin-inline: 20px;
 }
 
-
-
-.colours{
-    color: hsl(212, 27%, 19%);
-    color: hsl(213, 9%, 39%);
-    color: hsl(212, 27%, 19%);
-    color: hsl(213, 9%, 39%);
-    color: hsl(232, 10%, 55%);
-    color: hsl(210, 4%, 67%);
-    color: hsl(0, 0%, 100%);
+.linkSocialNetWork img{
+    fill: hsl(0, 0%, 100%);
 }
+
+@media (min-width: 1440px){
+/* *************************************** Section Presentation ***************** */
+
+
+.linkContainer img{
+        display: none;
+    }
+
+    .navBarMobile{
+        display: flex;
+        position: static;
+        color: hsl(0, 0%, 100%);
+        background-color: transparent;
+        padding-bottom: 0;
+        margin-top: -40px;
+    }
+
+    .navBarMobile ul{
+        flex-direction: row;
+    }
+
+    .navBarMobile ul li{
+        margin-inline: 43px;
+    }
+
+    .navBarMobile ul li:nth-last-of-type(1){
+        margin-right: 0;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .navBarMobile ul li:nth-last-of-type(1):hover{
+        
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #presentation{
+        background: url(../images/desktop/image-header.jpg) no-repeat;
+        background-size: 100%;
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    .title{
+        margin: 10% auto 0;
+    }
+
+    .title img {
+        margin: 8% auto 23.2%;
+    }
+
+    /* ***************************************Section Prestation */
+    .containerTransform{
+        flex-direction: row-reverse;
+    }
+
+    .containerTransform, .containerStandOut, .containerPhotoGraphy{
+        display: flex;
+        width: 100%;
+        height: 550px;
+    }
+
+    .description{
+        width: 50%;    
+    }
+
+    .containerTransform .description, .containerStandOut .description{
+        text-align: left;
+        padding: 100px 80px 100px 100px
+    }
+    
+    .readMore {
+        align-items: flex-start;
+    }
+
+    h2:first-of-type{
+        margin-left: 0;  
+    }
+
+    .transform {
+        background: url(../images/desktop/image-transform.jpg) no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        width: 50%;
+        height: 100%; 
+    }
+
+    .standOut{
+        background: url(../images/desktop/image-stand-out.jpg) no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        width: 50%;
+        height: 100%; 
+    }
+
+    .transform img, .standOut img, .graphic img, .photography img{
+        display: none;
+    }
+    
+    .containerPhotoGraphy .description{
+        margin-top: -240px;
+        position: relative;
+        left: 25%;
+    }
+
+    .containPhotography, .containGraphic{
+        width: 50%;
+    }
+
+    .graphic{
+        background: url(../images/desktop/image-graphic-design.jpg) no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        width: 100%;
+        height: 100%; 
+    }
+
+    .photography{
+        background: url(../images/desktop/image-photography.jpg) no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        width: 100%;
+        height: 100%; 
+    }
+    /* *****************************************Testimonys */
+    .testimonys{
+        display: flex;
+    }
+
+    .testimonys h3{
+        position: absolute;
+    }
+}
+
 
 
