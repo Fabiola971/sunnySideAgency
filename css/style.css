@@ -150,8 +150,25 @@ hr{
     border: none;
 }
 
+
+.containerTransform .readMore hr{
+    background-color:  rgb(252, 241, 192);
+}
+
+.containerTransform .readMore hr:hover{
+    background-color: hsl(51, 100%, 49%);
+}
+
 .containerPhotoGraphy .description{
     margin-top: -282px;
+}
+
+.containerStandOut .readMore hr{
+    background-color: rgb(247, 218, 211);
+}
+
+.containerStandOut .readMore hr:hover{
+    background-color:hsl(7, 99%, 70%);
 }
 
 .description{
@@ -191,6 +208,10 @@ hr{
     color: hsl(213, 9%, 39%);
 }
 
+.paragraph3{
+text-indent: -10.5px;
+}
+
 .testimony{
     display: flex;
     flex-direction: column;
@@ -204,6 +225,8 @@ hr{
 }
 
 .testimony img{
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -215,7 +238,7 @@ hr{
 .testimonys{
     margin-top: 30px;
     padding: 50px 28px 80px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .testimonys h3:first-child{
@@ -228,17 +251,22 @@ hr{
 .testimonys p{
     color: hsl(213, 9%, 39%);
     line-height: 32px;
-    /* padding-inline: 5px; */
-
 }
 
 span{
     color: hsl(210, 4%, 67%);
 }
 /* *************************************************************Section Gallery */
+.photos{
+    display: flex;
+}
 
 .photos img{
    width: 50%; 
+}
+
+.photosDesktop{
+    display: none;
 }
 /* *************************************************************Footer */
 .footer{
@@ -265,6 +293,22 @@ span{
 .linkSocialNetWork img{
     fill: hsl(0, 0%, 100%);
 }
+
+@media (min-width: 450px){
+/* *****************************************Testimonys */
+    .paragraph1{
+        width: 350px;
+    }
+
+    .paragraph2{
+        width: 355px;
+    }
+
+    .paragraph3{
+        width: 350px;
+    }
+}
+
 
 @media (min-width: 1440px){
 /* *************************************** Section Presentation ***************** */
@@ -297,7 +341,6 @@ span{
     }
 
     .navBarMobile ul li:nth-last-of-type(1):hover{
-        
         background-color: rgba(255, 255, 255, 0.2);
     }
 
@@ -336,6 +379,7 @@ span{
         padding: 100px 80px 100px 100px
     }
     
+
     .readMore {
         align-items: flex-start;
     }
@@ -389,13 +433,43 @@ span{
         width: 100%;
         height: 100%; 
     }
+
     /* *****************************************Testimonys */
+    .adapt{
+        margin-left: 0;
+    }
+    
     .testimonys{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        margin-top: 0;
+        padding: 150px;
+    }
+
+    .testimonys h3:first-child{
+        position: absolute;
+        top: 80px;
+        left: 40%;
+        right: 40%;
+        letter-spacing: .2rem;
+    }
+
+    .testimony{
+        margin-inline: 20px;
+    }
+    /* *********************************************************Gallery */
+    .photos{
+        display: none;
+    }
+
+    .photosDesktop{
         display: flex;
     }
 
-    .testimonys h3{
-        position: absolute;
+    .photosDesktop img{
+        width: 25%;
     }
 }
 
