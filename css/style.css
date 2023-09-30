@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 h1{
     font-family: 'Fraunces', serif; 
 }
@@ -79,16 +84,16 @@ section{
     justify-content: space-between;
 }
 
-.navBarMobile::before{
+.navBarMobile ul::before{
     content: " ";
     width: 0px;
     height: 0px;
     border: 0.1px solid transparent;
     position: absolute;
     border-width: 30px;
+    right: 0;
+    top: -20px;
     border-color: transparent white transparent transparent;
-    margin-left: 79.80%;
-    margin-top: -20px;
     display: block;    
 }
 
@@ -98,7 +103,6 @@ section{
     left: 40px;
     right: 40px;
     padding-bottom: 40px;
-    /* height: 18.3%; */
     color: hsl(210, 4%, 67%);
     background-color: hsl(0, 0%, 100%);
     font-family: 'Barlow', sans-serif;;
@@ -108,6 +112,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .navBarMobile ul li{
@@ -138,7 +143,9 @@ section{
     margin-top: 27%;
 }
 /* ****************************************************************Section  Prestation*/
-hr{
+.containerTransform .readMore h3::after{
+    content: " ";
+    background-color:  rgb(252, 241, 192);
     width: 140px;
     height: 10px;
     border-radius: 10px;
@@ -146,16 +153,13 @@ hr{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    margin-top: -10px;
-    border: none;
+    position: absolute;
+    top: 13px;
+    left:-3px;
+    z-index: -1;   
 }
 
-
-.containerTransform .readMore hr{
-    background-color:  rgb(252, 241, 192);
-}
-
-.containerTransform .readMore hr:hover{
+.containerTransform .readMore h3:hover::after{
     background-color: hsl(51, 100%, 49%);
 }
 
@@ -163,11 +167,23 @@ hr{
     margin-top: -282px;
 }
 
-.containerStandOut .readMore hr{
+.containerStandOut .readMore h3::after{
+    content: " ";
     background-color: rgb(247, 218, 211);
+    width: 140px;
+    height: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: absolute;
+    top: 13px;
+    left:-3px;
+    z-index: -1;   
 }
 
-.containerStandOut .readMore hr:hover{
+.containerStandOut .readMore h3:hover::after{
     background-color:hsl(7, 99%, 70%);
 }
 
@@ -190,17 +206,17 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .readMore h3{
-    z-index: 1;
+    position: relative;
+    cursor: pointer;
 }
 
 .containGraphic p{
     color: rgb(65, 104, 93);
 }
-
-
 
 /* **************************************************************Section Testimony */
 .adapt{
@@ -238,7 +254,6 @@ text-indent: -10.5px;
 .testimonys{
     margin-top: 30px;
     padding: 50px 28px 80px;
-    /* border: 2px solid red; */
 }
 
 .testimonys h3:first-child{
@@ -288,11 +303,52 @@ span{
 
 .linkSocialNetWork img{
     margin-inline: 20px;
+    cursor: pointer;   
 }
 
-.linkSocialNetWork img{
-    fill: hsl(0, 0%, 100%);
+.linkSocialNetWork img:nth-child(1):hover{
+   background-image: url(../images/icon-facebook-w.svg);
+   height: 100%;
+   background-size: 100%;
+   background-position: center center;
+   background-repeat: no-repeat;   
 }
+
+.linkSocialNetWork img:nth-of-type(2):hover{
+    content: url(../images/icon-instragram-w.svg);   
+ }
+
+ .linkSocialNetWork img:nth-of-type(3):hover{
+    content: url(../images/icon-twitter-w.svg);   
+ }
+
+ .linkSocialNetWork img:last-of-type:hover{
+    content: url(../images/icon-pinterest-w.svg);   
+ }
+ 
+ @media (min-width:375px) and (max-width:599px) {
+    #presentation{
+        padding: 40px 40px 100px;
+    }
+ }
+
+ @media (min-width:600px) and (max-width:899px) {
+    #presentation{
+        padding: 40px 40px 200px;
+    }
+ }
+
+ @media (min-width:900px) and (max-width:1199px) {
+    #presentation{
+        padding: 40px 40px 300px;
+    }
+ }
+
+ @media (min-width:1200px) and (max-width:1443px) {
+    #presentation{
+        padding: 40px 40px 400px;
+    }
+ }
 
 @media (min-width: 450px){
 /* *****************************************Testimonys */
@@ -309,12 +365,9 @@ span{
     }
 }
 
-
 @media (min-width: 1440px){
 /* *************************************** Section Presentation ***************** */
-
-
-.linkContainer img{
+    .linkContainer img{
         display: none;
     }
 
@@ -329,6 +382,10 @@ span{
 
     .navBarMobile ul{
         flex-direction: row;
+    }
+
+    .navBarMobile ul::before{
+        visibility: hidden;
     }
 
     .navBarMobile ul li{
@@ -371,21 +428,29 @@ span{
     }
 
     .description{
-        width: 50%;    
+        width: 50%;        
     }
 
     .containerTransform .description, .containerStandOut .description{
         text-align: left;
-        padding: 100px 80px 100px 100px
+        padding: 180px 80px 100px 105px
+    }
+
+    .containerTransform .description h2, .containerStandOut .description h2{
+        margin-right: 273px;
+    }
+
+    .containerTransform .description p, .containerStandOut .description p{
+        margin-right: 110px;
     }
     
-
     .readMore {
         align-items: flex-start;
     }
 
     h2:first-of-type{
-        margin-left: 0;  
+        margin-left: 0;
+        font-size: 25px; 
     }
 
     .transform {
@@ -451,14 +516,15 @@ span{
     .testimonys h3:first-child{
         position: absolute;
         top: 80px;
-        left: 40%;
-        right: 40%;
+        /* left: 40%; */
+        /* right: 40%; */
         letter-spacing: .2rem;
     }
 
     .testimony{
         margin-inline: 20px;
     }
+    
     /* *********************************************************Gallery */
     .photos{
         display: none;

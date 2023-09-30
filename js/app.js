@@ -10,7 +10,4 @@ iconHamburger.addEventListener('click', () => {
     navBarMobile.classList.toggle('hidden');
 })
 
-// set images
-const imgTransform = document.querySelector('.transform img');
-console.log(imgTransform);
 
